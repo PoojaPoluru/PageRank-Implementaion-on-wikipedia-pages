@@ -1,24 +1,41 @@
- 									
+ 
+									
 					PageRank of Wikipedia pages
 
 
 
-Compiler:Java               CompilerLanguage 	:Java                              IDE :Eclipse
+Compiler:Java              
+Language :Java
+IDE :Eclipse
+
 -------------------------------------------------------------------------------------------------------
 
-Compilation and execution using the TerminalStep to create folder in HDFS: Commands to create input folder in hdfs
+
+
+Compilation and execution using the Terminal
+Step to create folder in HDFS: Commands to create input folder in hdfs
+
 1.sudo su hdfs
-2.Hadoop fs -mkdir /user/cloudera
-3.Hadoop fs -chown cloudera /user/cloudera
-4.Exit
-5.Sudo su cloudera
-6.Hadoop fs -mkdir /user/cloudera/input 
+
+2.Hadoop fs -mkdir /user/cloudera
+
+3.Hadoop fs -chown cloudera /user/cloudera
+
+4.Exit
+
+5.Sudo su cloudera
+
+6.Hadoop fs -mkdir /user/cloudera/input
+ 
 
 Adding files to HDFS
-
-Step 1: Place the input files in HDFS.Command: hadoop fs -put < CanterburyFile folder Path> <Path in HDFS>
+
+
+Step 1: Place the input files in HDFS.
+Command: hadoop fs -put < CanterburyFile folder Path> <Path in HDFS>
 Example: Hadoop fs -put /home/cloudera/Downloads/cantrbry/Canterbury/ /user/cloudera/input
-
+
+
 ---------------------------------------------------------------------------------------------------------------
 
 Driver Class:It has configurations to run jobs
